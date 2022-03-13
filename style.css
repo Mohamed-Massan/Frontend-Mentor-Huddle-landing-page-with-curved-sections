@@ -41,12 +41,6 @@ nav input{
     padding: 10px;
 }
 
-
-nav input:hover {
-    background-color: hsl(322, 100%, 66%);
-    color: #fff;
-}
-
 .hero-container{
     text-align: center;
     margin-top:70px;
@@ -78,9 +72,16 @@ nav input:hover {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
     transition: 100ms;
 }
+
 .btn:hover{
     background-color: hsl(322, 100%, 49%);
 }
+
+nav input:hover {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
 
 .btn:active{
     background-color: hsl(322, 59%, 54%);
@@ -96,20 +97,16 @@ main{
 main img{
     width: 100%;
 }
-
 .score-container{
     display: flex;
     flex-direction: row;
 }
-
 .score-item {
     margin: auto 150px;
 }
-
 .score-item img{
     width: 30px;
 }
-
 .score-item h1{
     font-size: 50px;
     margin: -5px;
@@ -202,11 +199,13 @@ footer section{
     align-items: center;
 }
 .news-letter-container form input {
-    padding: 5px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 20px;
     border: none;
     outline: none;
     margin: 5px;
+    border-radius: 5px;
+
 }
 
 input[type="submit"]{
@@ -214,6 +213,10 @@ input[type="submit"]{
     color: #fff;
     cursor: pointer;
     
+}
+
+input[type="submit"]:hover{
+    background-color: hsl(322, 100%, 50%);
 }
 
 @media screen and (max-width:850px){
@@ -247,7 +250,6 @@ input[type="submit"]{
     footer section {
         padding: 20px;
         width: 70%;
-        text-align: center;
     }
     
     .links{
@@ -257,6 +259,26 @@ input[type="submit"]{
 
 
 @media screen and (max-width:449px){
+    footer{
+        flex-direction: column-reverse;
+        
+    }
+
+    input[type="submit"]{
+        float: right;
+        width: 40%;      
+    }
+    input[type="email"] {
+        width: 91%;
+
+      }
+    footer section {
+        text-align: left;
+    }
+    .links {
+        justify-content: flex-start;
+      }
+
     .services-container article{
         flex-direction: column;
     }
