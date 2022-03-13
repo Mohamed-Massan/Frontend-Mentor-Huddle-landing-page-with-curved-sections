@@ -53,7 +53,15 @@ nav input{
     margin-bottom: 50px;
     width: 90%;
     text-align: center;
+
 }
+
+.hero-item h1{
+    color: hsl(192, 100%, 9%);
+
+}
+
+
 
 .hero-item img{
     width: 70%;
@@ -64,7 +72,7 @@ nav input{
     background-color: hsl(322, 100%, 66%);
     width: 250px;
     font-size: 18px;
-    color: #fff;
+    color: hsl(207, 100%, 98%);
     outline: none;
     border: none;
     border-radius: 25px;
@@ -263,6 +271,7 @@ input[type="submit"]:hover{
         flex-direction: column-reverse;
         
     }
+    
 
     input[type="submit"]{
         float: right;
@@ -287,9 +296,16 @@ input[type="submit"]:hover{
         width: 90%;
         text-align: center;
     }
-    .score-item {
-        margin: auto 30px;
+
+    .score-container {
+        flex-direction: column;
     }
+
+    .score-item {
+        margin: 30px auto;
+    }
+
+    
     .article2 {
         margin: 40px auto;
       }
