@@ -41,6 +41,12 @@ nav input{
     padding: 10px;
 }
 
+
+nav input:hover {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
 .hero-container{
     text-align: center;
     margin-top:70px;
@@ -72,6 +78,10 @@ nav input{
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
     transition: 100ms;
 }
+.btn:hover{
+    background-color: hsl(322, 100%, 49%);
+}
+
 .btn:active{
     background-color: hsl(322, 59%, 54%);
 }
@@ -86,16 +96,20 @@ main{
 main img{
     width: 100%;
 }
+
 .score-container{
     display: flex;
     flex-direction: row;
 }
+
 .score-item {
     margin: auto 150px;
 }
+
 .score-item img{
     width: 30px;
 }
+
 .score-item h1{
     font-size: 50px;
     margin: -5px;
